@@ -1,0 +1,29 @@
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.section__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--title-second-text-color);
+
+    @include desktop {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.18;
+        
+    }
+}
+
+
+

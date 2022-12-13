@@ -1,0 +1,26 @@
+.button-service {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    width: 216px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--accent-text-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:focus {
+            background-color: var(--btn-active-color);
+        }
+}
+

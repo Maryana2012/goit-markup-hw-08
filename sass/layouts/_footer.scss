@@ -1,0 +1,82 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-hero-color);
+}
+
+.footer__container-second {
+    @include tablet{
+        display: flex;
+            align-items: baseline;
+            margin-bottom: 60px;       
+    }
+    @include desktop {
+             margin-bottom: 0;
+    }
+}
+.footer-logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--title-text-color);
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.footer__logo-ad {
+    @include tablet {
+            margin-left: 76px;
+            margin-right: 165px;
+            width: 232px;
+    }
+    @include desktop {
+            margin-left: 0;
+            margin-right: 70px;
+            width: 231px;
+    }
+}
+.footer__list{
+    margin-bottom: 8px;
+    width: 100%;
+    &:last-child { margin-bottom: 0; }
+    @include tablet {
+              margin-bottom: 9px;
+              width: 232px;}
+    @include desktop {
+        margin-bottom: 9px;
+        width: 232px;}
+}
+
+.page-footer .address {
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-style: normal;
+    color: var(--title-text-color);
+    &:hover,
+    &:focus {color: var(--accent-text-color);}
+        @include desktop {
+             text-align: left;
+        }
+}
+
+.page-footer .contact {
+    display: block;
+    text-align: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-style: normal;
+    color: var(--footer-text-color);
+    &:hover,
+    &:focus {color: var(--accent-text-color); }
+        @include desktop {
+             text-align: left;
+        }
+}

@@ -1,0 +1,26 @@
+.portfolio-div {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--title-text-color);
+    padding: 63px 24px;
+
+    .work-link:hover & {
+            transform: translateY(0);
+        }
+}
+

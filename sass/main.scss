@@ -1,0 +1,30 @@
+@import './utils/variables';
+@import './base/reset.scss';
+@import './components/body';
+@import './utils/mixin';
+
+@import './components/index-container';
+@import './components/index-section';
+@import './components/portfolio-section';
+@import './components/index-btn-service';
+@import './components/portfolio-btn';
+
+@import './layouts/logo.scss';
+@import './layouts/index-header';
+@import './layouts/index-hero';
+@import './layouts/index-modal';
+@import './layouts/index-checkbox';
+@import './layouts/index-advantage';
+@import './layouts/index-works';
+@import './layouts/index-team';
+@import './layouts/index-clients';
+@import './layouts/footer.scss';
+@import './layouts/footer-soc.scss';
+@import './layouts/footer-form.scss';
+
+@import './layouts/portfolio-header.scss';
+@import './layouts/portfolio-work.scss';
+@import './layouts/portfolio-img.scss';
+@import './layouts/portfolio-overlay.scss';
+
+
