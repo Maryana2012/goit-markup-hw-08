@@ -488,6 +488,11 @@ body {
     color: var(--accent-text-color);
   }
 }
+@media screen and (min-width: 1200px) {
+  .menu-tel__link {
+    font-size: 14px;
+  }
+}
 
 .menu-mail__link {
   -webkit-transition-property: color;
@@ -520,6 +525,7 @@ body {
 @media screen and (min-width: 1200px) {
   .menu-mail__link {
     margin-bottom: 0;
+    font-size: 14px;
   }
 }
 

@@ -160,8 +160,12 @@
         
         &:hover,
         &:focus {color: var(--accent-text-color);}   
-    }        
+    }  
+        @include desktop {
+            font-size: 14px;
+        }
 }
+
 
 .menu-mail__link {
     transition-property: color;
@@ -187,6 +191,7 @@
     }            
     @include desktop {
         margin-bottom: 0;
+        font-size: 14px;
     }
 }
 
@@ -196,6 +201,7 @@
         margin-bottom: 0;
     }
     @include desktop {  
+        
     }
 }
 
