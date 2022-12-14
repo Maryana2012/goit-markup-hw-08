@@ -1,17 +1,27 @@
+.footer-container {
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 .page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-hero-color);
+    
 }
 
 .footer__container-second {
     @include tablet{
         display: flex;
-            align-items: baseline;
-            margin-bottom: 60px;       
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 60px;       
     }
     @include desktop {
              margin-bottom: 0;
+             
+            
     }
 }
 .footer-logo {
@@ -27,15 +37,15 @@
 }
 
 .footer__logo-ad {
+ 
     @include tablet {
-            margin-left: 76px;
-            margin-right: 165px;
             width: 232px;
     }
     @include desktop {
             margin-left: 0;
             margin-right: 70px;
-            width: 231px;
+            width: 100%;
+      
     }
 }
 .footer__list{

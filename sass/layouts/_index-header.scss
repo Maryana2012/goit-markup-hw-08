@@ -3,7 +3,11 @@
     >.container {display: flex;}
     }
 }
+// .no-scroll {
+//     overflow: hidden;
+// }
 .menu-mob {
+   
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -11,7 +15,7 @@
     background-color: #ffffff;
     top: 0px;
     left: 0px;
-
+    
     >.container {
         padding-left: 40px;
         padding-bottom: 48px;
@@ -19,7 +23,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        overflow: auto;
+        overflow: hidden;
 
             @include tablet {
                     display: flex;
@@ -41,6 +45,7 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+   
     @include tablet {
         opacity: 1;
         pointer-events: painted;

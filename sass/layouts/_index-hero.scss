@@ -5,7 +5,6 @@
 }
 
 .hero-image {
-    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--background-hero-color);
@@ -13,26 +12,25 @@
     background-position: center;
     background-size: cover;
     background-image: var(--grad),
-        url('../../images/mobile_bg.jpg');
+        url('../images/mobile_bg.jpg');
     @include retina
         {   background-image: var(--grad),
-            url('../../images/mobile_bg_2x.jpg'); }
+            url('../images/mobile_bg_2x.jpg'); }
 
     @include mobile
         {   background-image: var(--grad),
-            url('../../images/tablet_bg.jpg');
+            url('../images/tablet_bg.jpg');
             @include retina {
-            background-image: var(--grad), url('../../images/tablet_bg_2x.jpg');}
+            background-image: var(--grad), url('../images/tablet_bg_2x.jpg');}
         }
     @include tablet
-        {   background-image: var(--grad), url('../../images/desktop_bg.jpg');
+        {   background-image: var(--grad), url('../images/desktop_bg.jpg');
             @include retina {
-            background-image: var(--grad), url('../../images/desktop_bg_2x.jpg');}
+            background-image: var(--grad), url('../images/desktop_bg_2x.jpg');}
         }
 }    
 
 .hero-title {
-    width: 360px;
     height: 84px;
     margin: 0 auto;
     margin-bottom: 30px;

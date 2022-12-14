@@ -20,7 +20,7 @@
                                
                                 <!-- header-->
     <header class="header">
-        <div class="container header__container">
+        <div class="container header__container header-portfolio">
             <div class="logo__container">
                 <a href="./index.html" class="logo link"><span class="logo-web">Web</span>Studio</a>
                 <button type="button" class="menu-button__open" data-menu-open>
@@ -90,12 +90,17 @@
            <section class="section">
             <div class="container section-portfolio">
             <h1 hidden>Роботи</h1>
-            <ul class="list list-btn">
-                <li><button type="button" class="button-filter">Усі</button> </li>
-                <li><button type="button" class="button-filter">Веб-сайти</button></li>
-                <li><button type="button" class="button-filter">Додатки</button></li>
-                <li><button type="button" class="button-filter">Дизайн</button></li>
-                <li><button type="button" class="button-filter">Маркетинг</button></li>
+            <ul class="list btn__list">
+                <!-- <div class="btn__item"> -->
+                    <li><button type="button" class="button-filter">Усі</button> </li>
+                    <li><button type="button" class="button-filter">Веб-сайти</button></li>
+                    <li><button type="button" class="button-filter">Додатки</button></li>
+                <!-- </div> -->
+                <!-- <div class="btn__item"> -->
+                    <li><button type="button" class="button-filter">Дизайн</button></li>
+                    <li><button type="button" class="button-filter">Маркетинг</button></li>
+                <!-- </div> -->
+                
             </ul>
             <ul class="list list-img">
                 <li><a href="#" class="link work-link">
@@ -267,9 +272,9 @@
             </div>
         </div>
         <!--form mail-->
-        <div form-container>
+        <div>
             <form>
-                <p class="label-form" for="mail">Підпишіться на розсилку</p>
+                <p class="label-form">Підпишіться на розсилку</p>
                 <div class="form-mail">
                     <input class="input-form" type="email" name="mail" id="mail" placeholder="E-mail">
                     <button class="btn-mail-submit" type="submit">Підписатися
@@ -282,6 +287,8 @@
         </div>
     </div>
 </footer>
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
     
 </body>
 </html>
