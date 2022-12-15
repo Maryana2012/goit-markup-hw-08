@@ -8,36 +8,46 @@
     transition-property: opacity visibility;
     transition-duration: 250ms;
     transition-timing-function: linear;
+    // overflow: hidden;
+   
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    // overflow: hidden;
 }
+
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.5) rotate(360deg);
     transition: transform;
     transition-duration: 250ms;
     transition-timing-function: linear;
-}
+   
 
+   
+}
 .modal {
     position: absolute;
-    top: 50%;
+    top: 30px;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    transform: translate(-50%) scale(1) rotate(0deg);
     transition: transform;
     transition-duration: 250ms;
     transition-timing-function: linear;
-    z-index: 2;
-    width: 450px;
+    z-index: 4;
+    width: 100%;
     height: 609px;
     padding: 40px;
     background-color: var(--title-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    // overflow: scroll;
+    @include mobile {
+        width: 450px;
+    }
 
     @media screen and (min-width: 1200px) {
          width: 528px;
@@ -55,7 +65,7 @@
 }
 
 .modal-form {
-    width: 450px;
+    width: 100%;
     padding: 40px;
     @media screen and (min-width: 1200px) {
             width: 100%;
@@ -66,7 +76,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 370px;
+    width: 100%;
     margin-bottom: 10px;
     @media screen and (min-width: 1200px) {
             width: 448px;
@@ -152,18 +162,9 @@
 }
 
 .btn-modal-submit {
-    position: absolute;
-    display: flex;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    cursor: pointer;
-    bottom: 45px;
-    left: 0;
-    transform: translateX(60%);
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -176,18 +177,49 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// @include mobile{
+//     position: absolute;
+//     display: flex;
+//     transition-property: fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     align-items: center;
+//     justify-content: center;
+//     padding: 0;
+//     cursor: pointer;
+//     bottom: 45px;
+//     left: 0;
+//     transform: translateX(30%);
+//     width: 200px;
+//     height: 50px;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     color: var(--title-text-color);
+//     background-color: var(--accent-text-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     border: none;
 
     &:hover,
     &:focus {
             background: var(--btn-active-color);
-        }
-        @media screen and (min-width: 1200px) {
-            bottom: 40px;
-            transform: translateX(155px);
+        }}
+        // @include mobile {
+        // transform: translateX(60%);
+        // }
+        // @media screen and (min-width: 1200px) {
+        //     bottom: 40px;
+        //     transform: translateX(155px);
            
 
-        }
-}
+        // }
+
 
 
 

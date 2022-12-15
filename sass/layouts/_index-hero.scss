@@ -2,9 +2,14 @@
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .hero-image {
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--background-hero-color);
@@ -28,6 +33,9 @@
             @include retina {
             background-image: var(--grad), url('../images/desktop_bg_2x.jpg');}
         }
+    @include desktop {
+        max-width: 1600px;
+    }    
 }    
 
 .hero-title {
@@ -40,6 +48,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--title-text-color);
+    @include mobile {
+            width: 360px;
+            height: 120px;
+            }
     @include desktop {
         width: 696px;
         height: 120px;

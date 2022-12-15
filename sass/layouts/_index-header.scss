@@ -7,11 +7,10 @@
 //     overflow: hidden;
 // }
 .menu-mob {
-   
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
+    // z-index: 1;
     background-color: #ffffff;
     top: 0px;
     left: 0px;
@@ -31,8 +30,7 @@
                     align-items: center;
                     flex-direction:row;
                     justify-content: space-between;
-                    overflow:auto;
-            }
+                    }
         }
         @include tablet {
          position: relative;
